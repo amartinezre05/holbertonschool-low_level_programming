@@ -13,8 +13,11 @@ for (l = 48; l <= 57; l++)
 {
 putchar(i);
 putchar(l);
+if (i < 57 || l != 57)
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
