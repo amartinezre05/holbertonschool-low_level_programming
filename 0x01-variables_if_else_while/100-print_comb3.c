@@ -10,12 +10,18 @@ int i;
 int j;
 for (i = 48; i < 57; i++)
 {
-for (j = (i + 49); j <= 57; j++)
+for (j = 49; j <= 57; j++)
+{
+if (j > i)
 {
 putchar(i);
 putchar(j);
+if (i < 56)
+{
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 putchar('\n');
