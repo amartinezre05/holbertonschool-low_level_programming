@@ -1,13 +1,14 @@
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-#include "holberton.h"
-int _putchar(char c) 
+extern int _putchar(char c);
+ 
+int main(void)
 {
-_putchar(Holberton);
+int i;
+char a[9] = "Holberton";
+
+for (i = 0; i < 9; i++)
+{
+_putchar(a[i]);
+}
+_putchar('\n');
 return (0);
 }
