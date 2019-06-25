@@ -1,9 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - Print all the letters.
  *
- * Return: Always 0.
- *
+ * Return: void.
  */
 void print_alphabet(void)
 {
