@@ -16,23 +16,20 @@ pr = mult / 10;
 se = mult % 10;
 if (mult < 10)
 {
-_putchar(se + '0');
-if (j != 9)
+if (j != 0)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
+_putchar(se + '0');
 }
 else
 {
-_putchar(pr + '0');
-_putchar(se + '0');
-if (j != 9)
-{
 _putchar(',');
 _putchar(' ');
-}
+_putchar(pr + '0');
+_putchar(se + '0');
 }
 }
 _putchar('\n');
