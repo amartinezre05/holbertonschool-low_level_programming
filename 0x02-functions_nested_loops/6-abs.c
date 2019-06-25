@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
+ * _abs - Return the absolute value.
+ * @x: The first character to be printed
  *
- * Function for obtain the absolute value.
- *
+ * Return: To the value of x
  */
 int _abs(int x)
 {
