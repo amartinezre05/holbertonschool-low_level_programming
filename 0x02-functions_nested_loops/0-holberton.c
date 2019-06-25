@@ -1,3 +1,9 @@
+/**
+ * _putchar - Print a character
+ * @c: The character to be printed
+ *
+ * Return: To the value of 0
+ */
 int _putchar(char c);
 int main(void)
 {
