@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_alphabet - Print all the letters.
+ * print_alphabet_x10 - Print all the letters.
  *
  * Return: void.
  */
