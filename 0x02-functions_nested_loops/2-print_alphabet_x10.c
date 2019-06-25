@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * Prototype 
+ * print_alphabet - Print all the letters.
  *
+ * Return: void.
  */
 void print_alphabet_x10(void)
 {
