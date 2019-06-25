@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * Prototype - _isalpha(int c)
+ * _isalpha - Return a value if the letter is upper or lowercase.
+ * @c: The first character to be evalue
  *
- * Return 1 if c is a letter and 0 if not.
- *
+ * Return: To the value of 0
  */
 int _isalpha(int c)
 {
