@@ -1,7 +1,9 @@
 #include "holberton.h"
 /**
- * Prototype
+ * _islower - Return a value.
+ * @c: The first character to be evalue
  *
+ * Return: To the value of n
  */
 int _islower(int c)
 {
