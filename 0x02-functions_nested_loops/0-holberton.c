@@ -1,11 +1,10 @@
 #include "holberton.h"
 /**
- * _putchar - Print a character
- * @c: The character to be printed
+ * main - Print a character
  *
  * Return: To the value of 0
  */
-int _putchar(char)
+int main(void)
 {
 _putchar('H');
 _putchar('o');
