@@ -22,13 +22,13 @@ else if ((n % 3 == 0) && (n % 5 == 0))
 {
 printf("FizzBuzz ");
 }
-else if (n == 100)
+else if (n <= 99)
 {
-printf("%d", n);
+printf("%d, ", n);
 }
 else
 {
-printf("%d ", n);
+printf("%d", n);
 }
 }
 printf("\n");
