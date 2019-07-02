@@ -20,14 +20,14 @@ if (cont % 2 == 0)
 {
 for (pr = (cont / 2); pr < cont; pr++)
 {
-_putchar(pr + '0');
+_putchar(str[pr]);
 }
 }
 else
 {
 for (pr = ((cont - 1) / 2); pr < cont; pr++)
 {
-_putchar(pr + '0');
+_putchar(str[pr]);
 }
 }
 _putchar('\n');
