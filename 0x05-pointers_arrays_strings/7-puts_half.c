@@ -15,7 +15,7 @@ cont = 0;
 for (i = 0; str[i] != 0; i++)
 {
 }
-cont = i;
+cont = cont + i;
 if (cont % 2 == 0)
 {
 for (pr = (cont / 2); pr <= cont; pr++)
