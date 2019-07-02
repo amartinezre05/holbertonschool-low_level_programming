@@ -25,7 +25,7 @@ _putchar(str[pr]);
 }
 else
 {
-for (pr = ((cont - 1) / 2); pr < cont; pr++)
+for (pr = ((cont + 1) / 2); pr < cont; pr++)
 {
 _putchar(str[pr]);
 }
