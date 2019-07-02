@@ -15,19 +15,19 @@ cont = 0;
 for (i = 0; str[i] != 0; i++)
 {
 }
-cont = cont + i;
+cont = i;
 if (cont % 2 == 0)
 {
-for (pr = (cont / 2); pr <= cont; pr++)
+for (pr = (cont / 2); pr < cont; pr++)
 {
-_putchar(str[pr]);
+_putchar(pr + '0');
 }
 }
 else
 {
-for (pr = ((cont - 1) / 2); pr <= cont; pr++)
+for (pr = ((cont - 1) / 2); pr < cont; pr++)
 {
-_putchar(str[pr]);
+_putchar(pr + '0');
 }
 }
 _putchar('\n');
