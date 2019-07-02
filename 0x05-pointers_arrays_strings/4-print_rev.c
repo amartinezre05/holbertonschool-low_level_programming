@@ -18,8 +18,8 @@ while (s[i] != 0)
 i++;
 }
 cont = cont + i;
-rev = cont;
-while (s[rev] >= 0)
+rev = cont - 1;
+while (rev >= 0)
 {
 _putchar(s[rev]);
 rev--;
