@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *_strcat - Concatenates two strings..
+ * _strcat - Concatenates two strings..
  * @dest: The first pointer.
  * @src: The second pointer
  *
@@ -18,7 +18,7 @@ i++;
 while (src[j] < '\0')
 {
 dest[i + j] = src[j];
-i++;
+j++;
 }
 return (dest);
 }
