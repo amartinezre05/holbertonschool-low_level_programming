@@ -11,6 +11,10 @@ char *cap_string(char *s)
 int i;
 for (i = 0; s[i] != '\0'; i++)
 {
+if (s[i] == 9)
+{
+s[i] = 32;
+}
 if (s[i] == 32 ||
 	s[i] == 44 ||
 	s[i] == 59 ||
