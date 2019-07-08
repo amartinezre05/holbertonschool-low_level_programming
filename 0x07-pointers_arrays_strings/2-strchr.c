@@ -13,7 +13,7 @@ while (*s != '\0')
 {
 if (*s == c)
 {
-break;
+return (s);
 }
 s++;
 }
