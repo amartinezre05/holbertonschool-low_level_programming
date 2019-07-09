@@ -22,9 +22,9 @@ if (haystack[i] == needle[j])
 while (haystack[i] == needle[j])
 {
 cont = cont + 1;
-printf("%d\n", cont);
 i++;
 j++;
+printf("%d", i);
 }
 }
 break;
