@@ -27,6 +27,10 @@ for (i = 0; haystack[i] != 0; i++)
 		}
 		break;
 	}
+	if (*needle == '\0')
+	{
+		return (haystack);
+	}
 }
 return (haystack + k);
 }
