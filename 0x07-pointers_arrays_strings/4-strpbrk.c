@@ -21,5 +21,5 @@ return (s + j);
 }
 }
 }
-return (s + j);
+return ('\0');
 }
