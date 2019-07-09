@@ -25,6 +25,11 @@ for (i = 0; i < count; i++)
 if (accept[i] == s[j])
 {
 count2 = count2 + 1;
+break;
+}
+if (accept[i + 1] == '\0')
+{
+return (count2);
 }
 }
 }
