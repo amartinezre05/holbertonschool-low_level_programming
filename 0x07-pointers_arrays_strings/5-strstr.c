@@ -28,5 +28,9 @@ int aux2 = 0;
 		return (haystack + i);
 		}
 	}
+	if (needle[0] == '\0')
+	{
+	return (haystack);
+	}
 return (0);
 }
