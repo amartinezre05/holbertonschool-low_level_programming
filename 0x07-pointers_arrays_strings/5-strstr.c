@@ -14,6 +14,7 @@ int aux = 0;
 int aux2 = 0;
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
+		aux2 = 0;
 		if (haystack[i] == needle[0])
 		{
 		aux = i;
