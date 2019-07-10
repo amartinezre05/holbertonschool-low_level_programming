@@ -5,17 +5,16 @@
 * @haystack: The pointer.
 * @needle: substring.
 *
-* Return: To the value of haystack.
+* Return: To the value char.
 */
 char *_strstr(char *haystack, char *needle)
 {
 int i;
 int aux = 0;
 int aux2 = 0;
-int j = 0;
-for (i = 0; haystack[i] != '\0'; i++)
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		if (haystack[i] == needle[j])
+		if (haystack[i] == needle[0])
 		{
 		aux = i;
 			while (haystack[aux] == needle[aux2])
