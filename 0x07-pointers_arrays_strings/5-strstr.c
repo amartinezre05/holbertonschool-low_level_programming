@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
 * _strstr - function finds the first occurrence of the substring.
@@ -11,27 +10,24 @@
 char *_strstr(char *haystack, char *needle)
 {
 int i;
-int j;
-while (haystack[i])
-{
-	if (haystack[i] == needle[j])
+int aux = 0;
+int aux2 = 0;
+int j = 0;
+for (i = 0; haystack[i] != '\0'; i++)
 	{
-		j++;
-		if (needle[j] == 0)
+		if (haystack[i] == needle[j])
 		{
-			return (haystack + i - (j - 1));
+		aux = i;
+			while (haystack[aux] == needle[aux2])
+			{
+			aux++;
+			aux2++;
+			}
 		}
-	break;
+		if (needle[aux2] == '\0')
+		{
+		return (haystack + i);
+		}
 	}
-	else
-	{
-		j = 0;
-	}
-i++;
-}
-if (needle[0] == 0)
-{
-return (haystack);
-}
 return (0);
 }
