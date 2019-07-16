@@ -19,7 +19,7 @@ char *b;
 	}
 
 	b = malloc(sizeof(c) * size);
-	if (b == '\0')
+	if (b == NULL)
 	{
 		return (NULL);
 	}
