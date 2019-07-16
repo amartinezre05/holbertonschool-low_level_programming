@@ -21,7 +21,7 @@ char *b;
 	;
 	}
 	i = i + 1;
-	b = malloc(sizeof(str) * i);
+	b = malloc(sizeof(char) * i);
 	if (b == NULL)
 	{
 		return (NULL);
