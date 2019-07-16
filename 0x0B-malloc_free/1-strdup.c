@@ -20,6 +20,7 @@ char *b;
 	{
 	;
 	}
+	i = i + 1;
 	b = malloc(sizeof(str) * i);
 	if (b == NULL)
 	{
