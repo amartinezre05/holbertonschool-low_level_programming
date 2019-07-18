@@ -33,16 +33,16 @@ char *e;
 	{
 		j = n;
 	}
-	e = malloc(sizeof(char) * (i + j + 1));
+	e = malloc(sizeof(char) * (i + j));
 	if (e == NULL)
 	{
 		return (NULL);
 	}
-	for (d = 0; s1[d] != 0; d++)
+	for (d = 0; s1[d] != '\0'; d++)
 	{
 		e[d] = s1[d];
 	}
-	for (f = 0; f < j; f++)
+	for (f = 0; f <= j; f++)
 	{
 		e[d] = s2[f];
 		d++;
