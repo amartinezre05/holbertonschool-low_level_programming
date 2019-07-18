@@ -17,7 +17,7 @@ char *e;
 	{
 		return (NULL);
 	}
-	e = malloc(sizeof(int) * nmemb * size);
+	e = (void *) malloc(sizeof(int) * nmemb * size);
 	if (e == NULL)
 	{
 		return (NULL);
@@ -26,5 +26,5 @@ char *e;
 	{
 		e[i] = 0;
 	}
-return ((void *) e);
+return (e);
 }
