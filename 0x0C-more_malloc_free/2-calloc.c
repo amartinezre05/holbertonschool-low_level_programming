@@ -17,7 +17,7 @@ char *e;
 	{
 		return (NULL);
 	}
-	e = (void *) malloc(sizeof(int) * nmemb * size);
+	e = malloc(sizeof(char) * nmemb * size);
 	if (e == NULL)
 	{
 		return (NULL);
