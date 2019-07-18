@@ -29,11 +29,11 @@ char *e;
 	{
 		;
 	}
-	if (j >= n)
+	if (j > n)
 	{
 		j = n;
 	}
-	e = malloc(sizeof(char) * (i + j));
+	e = malloc(sizeof(char) * (i + j + 1));
 	if (e == NULL)
 	{
 		return (NULL);
@@ -42,10 +42,11 @@ char *e;
 	{
 		e[d] = s1[d];
 	}
-	for (f = 0; f <= j; f++)
+	for (f = 0; f < j; f++)
 	{
 		e[d] = s2[f];
 		d++;
 	}
+	e[i + j] = '\0';
 return (e);
 }
