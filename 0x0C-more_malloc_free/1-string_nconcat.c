@@ -31,7 +31,7 @@ char *e;
 	}
 	if (j >= n)
 	{
-		j == n;
+		j = n;
 	}
 	e = malloc(sizeof(char) * (i + j + 1));
 	if (e == NULL)
