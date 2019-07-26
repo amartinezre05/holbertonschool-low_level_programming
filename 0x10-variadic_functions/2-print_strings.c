@@ -20,7 +20,7 @@ va_start(list, n);
 	s = va_arg(list, char*);
 		if (s != NULL)
 		{
-		printf("%s", va_arg(list, char*));
+		printf("%s", s);
 		}
 		else
 		{
