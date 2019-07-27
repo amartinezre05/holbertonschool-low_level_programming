@@ -1,10 +1,8 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdlib.h>
 /**
 * print_all -  a function that prints anything.
 * @format: Constant variable type char.
-*
 * Return: Value of type void.
 */
 void print_all(const char * const format, ...)
@@ -15,13 +13,12 @@ va_list list;
 va_start(list, format);
 
 	while (format == NULL)
-	{
-		printf("\n");
+	{	printf("\n");
 		return;
 	}
 	while (format[i] != '\0')
 	{
-		switch (format[i])
+	switch (format[i])
 		{
 		case 'c':
 			printf("%c", (char)va_arg(list, int));
@@ -34,17 +31,18 @@ va_start(list, format);
 			break;
 		case 's':
 			s = va_arg(list, char*);
-			if (s == NULL)
-			{
-			printf("(nil)");
-			}
-			printf("%s", s);
+			if (s != NULL)
+			{	printf("%s", s);
 			break;
+			}
+			else
+			{	printf("(nil)");
+			break;
+			}
 		}
-	if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && (format[i + 1] != '\0'))
-	{
+	if ((format[i] == 'c' || format[i] == 'i' ||
+format[i] == 'f' || format[i] == 's') && (format[i + 1] != '\0'))
 		printf(", ");
-	}
 	i++;
 	}
 printf("\n");
