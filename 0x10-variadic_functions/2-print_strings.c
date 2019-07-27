@@ -32,4 +32,5 @@ va_start(list, n);
 		}
 	}
 printf("\n");
+va_end(list);
 }
