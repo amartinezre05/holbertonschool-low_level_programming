@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
 * print_all -  a function that prints anything.
 * @format: Constant variable type char.
@@ -19,21 +19,21 @@ va_start(list, format);
 		printf("\n");
 		return;
 	}
-	while (format[i] != NULL)
+	while (format[i] != '\0')
 	{
 		switch (format[i])
 		{
 		case 'c':
-			printf("%c", (char)va_arg(list, int);
+			printf("%c", (char)va_arg(list, int));
 			break;
 		case 'i':
-			printf("%d", va_arg(list, int);
+			printf("%d", va_arg(list, int));
 			break;
 		case 'f':
-			printf("%f", (float)va_arg(list, double);
+			printf("%f", (float)va_arg(list, double));
 			break;
 		case 's':
-			str = va_arg(list, char*);
+			s = va_arg(list, char*);
 			if (s == NULL)
 			{
 			printf("(nil)");
@@ -41,7 +41,7 @@ va_start(list, format);
 			printf("%s", s);
 			break;
 		}
-	if ((c || i || s || f) && format[i - 1] != NULL)
+	if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && (format[i + 1] != '\0'))
 	{
 		printf(", ");
 	}
