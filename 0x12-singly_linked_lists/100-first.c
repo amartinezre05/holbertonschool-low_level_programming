@@ -9,6 +9,6 @@
 void startupfun (void)
 {
 char *str;
-str = "albeniz";
-printf ("You're beat! and yet, you must allow,\n%s", str);
+str = "I bore my house upon my back!";
+printf ("You're beat! and yet, you must allow,\n%s\n", str);
 }
