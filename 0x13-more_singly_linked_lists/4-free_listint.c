@@ -17,7 +17,6 @@ listint_t *new;
 	while (tmp != NULL)
 	{
 		new = tmp->next;
-		free(tmp->n);
 		free(tmp);
 		tmp = new;
 	}
