@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
-* listint_len - Function that returns the number of elements in a listint_t list.
+* listint_len - Function that returns the number of elements
 * @h: A constant variable of type list_t.
 *
 * Return: The number of nodes (i).
