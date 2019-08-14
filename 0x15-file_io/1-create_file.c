@@ -38,12 +38,18 @@ int fd, wt;
 		return (-1);
 	fd = open(filename, O_CREAT | O_WRONLY, 0600);
 	if (fd == -1)
+	{
+		close(fd);
 		return (-1);
+	}
 	if (text_content == NULL)
 		return (1);
 	wt = write(fd, text_content, _strlen(text_content));
 	if (wt == -1)
+	{
+		close(fd);
 		return (-1);
+	}
 	close(fd);
-return (wt);
+return (1);
 }
