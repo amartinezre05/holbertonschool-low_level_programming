@@ -43,7 +43,10 @@ int fd, wt;
 		return (-1);
 	}
 	if (text_content == NULL)
+	{
+		close(fd);
 		return (1);
+	}
 	wt = write(fd, text_content, _strlen(text_content));
 	if (wt == -1)
 	{
