@@ -64,7 +64,7 @@ int main(int argc, char **argv)
 	rd = read(fd1, buff, 1024);
 	if (rd == -1 || fd1 == -1)
 		error98(argv[1]);
-	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	fd2 = open(argv[2], O_WRONLY | O_TRUNC, 0664);
 	wr = write(fd2, buff, rd);
 	if (fd2 == -1 || wr == -1)
 		error99(argv[2]);
