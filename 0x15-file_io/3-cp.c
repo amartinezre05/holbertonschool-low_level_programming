@@ -63,23 +63,17 @@ int main(int argc, char **argv)
 	fd1 = open(argv[1], O_RDONLY);
 	rd = read(fd1, buff, 1024);
 	if (rd == -1 || fd1 == -1)
-	{	cl1 = close(fd1);
-		if (cl1 == -1)
-			close100(cl1);
-	error98(argv[1]);
-	}
+		error98(argv[1]);
 	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	wr = write(fd2, buff, rd);
 	if (fd2 == -1 || wr == -1)
-	{	cl2 = close(fd2);
-		if (cl2 == -1)
-			close100(cl2);
-	error99(argv[2]);
-	}
+		error99(argv[2]);
 	while (rd == 1024)
 	{
 		rd = read(fd2, buff, 1024);
 		wr = write(fd2, buff, rd);
+	if (rd == -1 || wr == -1)
+		error99(argv[2]);
 	}
 	cl1 = close(fd1);
 	cl2 = close(fd2);
