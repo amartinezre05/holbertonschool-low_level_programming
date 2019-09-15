@@ -21,8 +21,11 @@ dlistint_t *new;
 		new->next = NULL;
 		*head = new;
 	}
-	new->next = *head;
-	(*head)->prev = new;
-	*head = new;
+	else
+	{
+		new->next = *head;
+		(*head)->prev = new;
+		*head = new;
+	}
 	return (new);
 }
