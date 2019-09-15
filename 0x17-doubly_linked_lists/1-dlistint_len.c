@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
 * dlistint_len - Take the length of the list
 * @h: The start of the list
 * Return: The length
