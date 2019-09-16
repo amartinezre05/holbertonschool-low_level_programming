@@ -12,11 +12,10 @@ unsigned int i = 0;
 
 	while (current != NULL)
 	{
-		current = current->next;
 		if (i == index)
-			break;
-		else
-			return (NULL);
+			return (current);
+		i++;
+		current = current->next;
 	}
-return (current);
+return (NULL);
 }
