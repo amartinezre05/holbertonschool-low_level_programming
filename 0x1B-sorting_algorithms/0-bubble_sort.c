@@ -15,6 +15,7 @@ bool status = true;
 
 while (status)
 {
+	status = false;
 	for (i = 0; i < size; i++)
 	{
 		if (array[i] > array[i + 1] && array[i + 1] != '\0')
@@ -22,6 +23,7 @@ while (status)
 			tmp = array[i];
 			array[i] = array[i + 1];
 			array[i + 1] = tmp;
+			status = true;
 			print_array(array, size);
 		}
 	}
