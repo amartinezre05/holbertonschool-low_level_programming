@@ -23,10 +23,13 @@ j = i + 1;
 			min = j;
 	j++;
 	}
+	if (min != i)
+	{
 	tmp = array[min];
 	array[min] = array[i];
 	array[i] = tmp;
 	print_array(array, size);
+	}
 i++;
 }
 }
