@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include "sort.h"
 
 /**
@@ -10,10 +11,11 @@
 void bubble_sort(int *array, size_t size)
 {
 unsigned int i, tmp = 0;
+bool status = true;
 
-while (array)
+while (status)
 {
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
 		if (array[i] > array[i + 1] && array[i + 1] != '\0')
 		{
