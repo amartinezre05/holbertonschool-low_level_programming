@@ -55,9 +55,14 @@ listint_t *tmp1, *tmp2;
 		if (tmp2->n < (tmp2->prev)->n)
 		{
 			swap(tmp2->prev, tmp2);
+			if (tmp2->prev == NULL)
+			{
+				*list = tmp2;
+			}
 			print_list(*list);
 		}
-	tmp2 = tmp2->prev;
+	if (tmp2->prev != NULL)
+		tmp2 = tmp2->prev;
 	}
 	tmp1 = tmp1->next;
 	}
