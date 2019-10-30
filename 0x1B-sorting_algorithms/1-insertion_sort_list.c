@@ -11,7 +11,7 @@ nodeL->next = nodeR->next;
 nodeR->next = nodeL;
 nodeR->prev = nodeL->prev;
 nodeL->prev = nodeR;
-	if (nodeL->next)
+/*	if (nodeL->next)
 	{
 		(nodeL->next)->prev = nodeL;
 	}
@@ -26,7 +26,11 @@ nodeL->prev = nodeR;
 	else
 	{
 		nodeR->prev = NULL;
-	}
+	}*/
+if (nodeR->prev != NULL)
+	(nodeR->prev)->next = nodeR;
+if (nodeL->next != NULL)
+	(nodeL->next)->prev = nodeL;
 }
 /**
 * insertion_sort_list - sort an array using the bubble method
@@ -35,7 +39,7 @@ nodeL->prev = nodeR;
 */
 void insertion_sort_list(listint_t **list)
 {
-listint_t *tmp1, *tmp2;
+listint_t *tmp1, *tmp2; /*tmp2*/
 
 	if (!list)
 	return;
@@ -44,12 +48,16 @@ listint_t *tmp1, *tmp2;
 
 	while (tmp1)
 	{
-	if (tmp1->n < (tmp1->prev)->n)
+	tmp2 = tmp1;
+	tmp2 = tmp2->next;
+	while (tmp2->n < (tmp2->prev)->n)
 	{
 		swap(tmp1->prev, tmp1);
-		print_list(*list);
+/*		if (tmp1->prev == NULL)
+			*list = tmp1;*/
+		print_list(*list);	
 	}
-	tmp2 = tmp1;
+/*	tmp2 = tmp1;
 	while (tmp2->prev)
 	{
 		if (tmp2->n < (tmp2->prev)->n)
@@ -63,7 +71,7 @@ listint_t *tmp1, *tmp2;
 		}
 	if (tmp2->prev != NULL)
 		tmp2 = tmp2->prev;
-	}
+	}*/
 	tmp1 = tmp1->next;
 	}
 }
