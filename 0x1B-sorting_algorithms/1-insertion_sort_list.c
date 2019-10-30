@@ -39,7 +39,7 @@ if (nodeL->next != NULL)
 */
 void insertion_sort_list(listint_t **list)
 {
-listint_t *tmp1, *tmp2; /*tmp2*/
+listint_t *tmp1, *tmp2;
 
 	if (!list)
 	return;
@@ -48,15 +48,15 @@ listint_t *tmp1, *tmp2; /*tmp2*/
 
 	while (tmp1)
 	{
-	tmp2 = tmp1;
 	tmp2 = tmp2->next;
-	while (tmp2->n < (tmp2->prev)->n)
-	{
-		swap(tmp1->prev, tmp1);
-/*		if (tmp1->prev == NULL)
-			*list = tmp1;*/
-		print_list(*list);	
-	}
+/*	tmp2 = tmp2->next;*/
+		while (tmp2->n < (tmp2->prev)->n)
+		{
+			swap(tmp2->prev, tmp2);
+			if (tmp2->prev == NULL)
+				*list = tmp2;
+			print_list(*list);	
+		}
 /*	tmp2 = tmp1;
 	while (tmp2->prev)
 	{
