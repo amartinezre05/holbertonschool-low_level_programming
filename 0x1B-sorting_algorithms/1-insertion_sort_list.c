@@ -41,7 +41,7 @@ listint_t *tmp1;
 			swap(tmp1->prev, tmp1);
 			if (tmp1->prev == NULL)
 				*list = tmp1;
-			print_list(*list);	
+			print_list(*list);
 		}
 	tmp1 = tmp1->next;
 	}
