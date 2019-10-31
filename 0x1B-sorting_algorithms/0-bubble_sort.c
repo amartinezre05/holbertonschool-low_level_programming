@@ -12,6 +12,9 @@ void bubble_sort(int *array, size_t size)
 unsigned int i, tmp = 0;
 bool status = true;
 
+if (!array || size < 2)
+	return;
+
 while (status)
 {
 	status = false;
